@@ -1,0 +1,48 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
+  "hexo": {
+    "version": "4.0.0"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.7",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-mobx": "^2.0.0",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "hexo": "^4.0.0",
+    "hexo-abbrlink": "^2.0.5",
+    "hexo-baidu-url-submit": "0.0.6",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-filter-github-emojis": "^2.1.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-baidu-sitemap": "^0.1.6",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-search": "^2.4.0",
+    "hexo-generator-sitemap": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-lazyload-image": "^1.0.4",
+    "hexo-neat": "^1.0.4",
+    "hexo-permalink-pinyin": "^1.1.0",
+    "hexo-prism-plugin": "^2.3.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0",
+    "hexo-wordcount": "^6.0.1",
+    "leancloud-storage": "^4.1.0",
+    "valine": "^1.3.10"
+  }
+}

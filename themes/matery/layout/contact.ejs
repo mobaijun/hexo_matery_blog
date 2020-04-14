@@ -1,0 +1,42 @@
+<%- partial('_partial/bg-cover') %>
+
+<main class="content">
+    <div id="contact" class="container chip-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="tag-title center-align">
+                    <i class="fas fa-comments"></i>&nbsp;&nbsp;<%= __('contact') %>
+                </div>
+                <%- page.content %>
+            </div>
+        </div>
+        <div class="card">
+            <% if (theme.gitalk && theme.gitalk.enable) { %>
+                <%- partial('_partial/gitalk') %>
+            <% } %>
+
+            <% if (theme.gitment.enable) { %>
+                <%- partial('_partial/gitment') %>
+            <% } %>
+
+            <% if (theme.disqus.enable) { %>
+                <%- partial('_partial/disqus') %>
+            <% } %>
+
+            <% if (theme.livere && theme.livere.enable) { %>
+                <%- partial('_partial/livere') %>
+            <% } %>
+
+            <% if (theme.valine && theme.valine.enable) { %>
+                <%- partial('_partial/valine') %>
+            <% } %>
+            <% if (theme.xianliao && theme.xianliao.enable) { %>
+                <script>
+                    var xlm_wid = '15486';
+                    var xlm_url = 'https://www.xianliao.me/';
+                </script>
+                <script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+            <% } %>
+        </div>
+    </div>
+</main>
