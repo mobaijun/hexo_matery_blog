@@ -1,3 +1,4 @@
+# main menu navigation url and icon
 # 配置菜单导航的名称、路径和图标icon.
 menu:
   Index:
@@ -12,6 +13,12 @@ menu:
   Archives:
     url: /archives
     icon: fas fa-archive
+#  电影:
+#    url: /movies
+#    icon: fas fa-film
+#  游戏:
+#    url: /games
+#    icon: fas fa-gamepad
   About:
     url: /about
     icon: fas fa-user-circle
@@ -52,7 +59,7 @@ time:
 # Index cover carousel configuration.
 # 首页封面轮播图的相关配置.
 cover:
-  showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
+  showPrevNext: false # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
   showIndicators: true # 是否显示指示器. # Whether to display the indicators
   autoLoop: false # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
@@ -60,15 +67,10 @@ cover:
   useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
 
-wordCount:
-  enable: true # 将这个值设置为 true 即可.
-  postWordCount: true
-  min2read: true
-  totalCount: true
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: false
+  enable: true
   showTitle: true
   title: 格言
   text: 君子之行，静以修身，俭以养德，非澹泊无以明志，非宁静无以致远。 汉末|蜀国|诸葛亮
@@ -76,18 +78,18 @@ dream:
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
-  enable: true
+  enable: false
   showTitle: true
   title: 音乐
   fixed: false # 开启吸底模式
   autoplay: false # 是否自动播放
-  theme: '#542674'
+  theme: '#42b983'
   loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'list' # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false # 列表默认折叠
-  listMaxHeight: 197px #列表最大高度
+  listMaxHeight: 333px #列表最大高度
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -123,9 +125,9 @@ logo: /medias/logo.png
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
   enable: true
-  name: 下载主题
-  icon: fas fa-cloud-download-alt
-  url: # https://mobaijun.coding.net/p/mobai_hexoBlog/d/mobai_hexoBlog/git/archive/master/
+  name: Github
+  icon: fab fa-github-alt
+  url: https://github.com/mobaijun8
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -134,7 +136,7 @@ socialLink:
   csdn: https://blog.csdn.net/weixin_44326093
   gitee:  https://gitee.com/wang_lianjie
   java: https://wang_lianjie.gitee.io/mobai_images.gitee.io/ziliaoxiazai.html
-  #  qq: 1218981875
+#  qq: 1218981875
   wechat: https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/about.jpg
   email: mobaijun8@163.com
   zhihu: https://www.zhihu.com/people/wang-jie-73-43-30/activities # https://www.zhihu.com/xxx
@@ -198,20 +200,30 @@ postInfo:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Java工程师 | 初级
-  introduction: 我只需努力,剩下的交给时光
+  career: Java工程师 | 中级
+  introduction: 业精于勤，荒于嬉；行成于思，毁于随。——韩愈
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
-    mobai_hexoBlog:
-      icon: fab fa-themeisle
-      iconBackground: 'linear-gradient(to bottom right, #CED8F6 0%, #CED8F6 100%)'
-      url: https://gitee.com/wang_lianjie/mobai_hexoBlog
-      desc: 一个基于Matery主题改造的响应式设计的 Hexo 博客主题。
+    hexo-theme-matery:
+      icon: fas fa-file-alt
+      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      url: http://github.com/blinkfox/hexo-theme-matery
+      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
+    Fenix:
+      icon: fas fa-database
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+      url: https://github.com/blinkfox/fenix
+      desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
+    typora-vue-theme:
+      icon: fas fa-file-alt
+      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+      url: https://github.com/blinkfox/typora-vue-theme
+      desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -270,8 +282,8 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: true
-  owner: mobaijun8
+  enable: false
+  owner: 
   repo: 
   oauth:
     clientId: 
@@ -305,7 +317,7 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
+  enable: false
   appId: 
   appKey: 
   notify: false
@@ -323,11 +335,16 @@ githubLink:
   url: https://github.com/mobaijun8
   title: Fork Me
 
-# Add google analytics configuration
-# 添加 Google Analytics 配置
-googleAnalytics:
+# The password verification feature of read post. To use this feature,
+# activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
+# Note: In order to ensure that the original password will not be leaked to the web page,
+# the password of the article must be encrypted by 'SHA256' so that it will not be cracked.
+# 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
+# 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
+verifyPassword:
   enable: true
-  id:
+  promptMessage: 请输入访问本文章的密码
+  errorMessage: 密码错误，将返回主页！
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
@@ -336,10 +353,16 @@ busuanziStatistics:
   totalTraffic: true # 总访问量
   totalNumberOfvisitors: true # 总人次
 
+# Add google analytics configuration
+# 添加 Google Analytics 配置
+googleAnalytics:
+  enable: true
+  id:
+
 # Add baidu analytics configuration
 # 添加 baidu Analytics 配置
 baiduAnalytics:
-  enable: true
+  enable: false
   id: 
 
 # 百度搜索资源平台提交链接
@@ -374,7 +397,7 @@ libs:
     crypto: /libs/cryptojs/crypto-js.min.js
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
-    valine: https://unpkg.com/valine/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
@@ -394,6 +417,22 @@ featureImages:
   - /medias/featureimages/6.jpg
   - /medias/featureimages/7.jpg
   - /medias/featureimages/8.jpg
+  - /medias/featureimages/9.jpg
+  - /medias/featureimages/10.jpg
+  - /medias/featureimages/11.jpg
+  - /medias/featureimages/12.jpg
+  - /medias/featureimages/13.jpg
+  - /medias/featureimages/14.jpg
+  - /medias/featureimages/15.jpg
+  - /medias/featureimages/16.jpg
+  - /medias/featureimages/17.jpg
+  - /medias/featureimages/18.jpg
+  - /medias/featureimages/19.jpg
+  - /medias/featureimages/20.jpg
+  - /medias/featureimages/21.jpg
+  - /medias/featureimages/22.jpg
+  - /medias/featureimages/23.jpg
+  - /medias/featureimages/24.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -421,12 +460,12 @@ reprint:
 # DaoVoice online contact
 daovoice:
   enable: false
-  app_id: 
+  app_id: 0a51f684
 
 # Tidio online contact
 tidio:
   enable: true
-  public_key: 
+  public_key: g0bldeh8ze8q06nyydunemlgkzgguloh
 
 #背景canvas-nest
 canvas_nest:
@@ -465,7 +504,7 @@ addthis:
 subtitle:
   enable: true
   loop: true # 是否循环
-  showCursor: false # 是否显示光标
+  showCursor: true # 是否显示光标
   startDelay: 100 # 开始延迟
   typeSpeed: 120 # 打字速度
   backSpeed: 150 # 删除速度
@@ -493,13 +532,29 @@ banner:
 
 #ICP备案信息尾部显示
 icp:
-  enable: true
+  enable: false
   url: http://beian.miit.gov.cn   # 备案链接
   text:  # 备案信息
 
 # 鼠标点击烟花爆炸动效
 fireworks:
   enable: true
+
+# 页面樱花飘落动效
+sakura:
+  enable: false
+
+# 鼠标点击文字特效
+wenzi:
+  enable: false
+
+# 背景雪花飘落特效
+xuehuapiaoluo:
+  enable: false
+  
+# 鼠标移动跟随星星特效
+xingxing:
+  enable: false
 
 # 在线登录聊天[闲聊]
 xianliao:

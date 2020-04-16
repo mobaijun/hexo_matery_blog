@@ -23,9 +23,9 @@
                         <div class="post-cate">
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             <% page.categories.forEach(category => { %>
-                                <a href="<%- url_for(category.path) %>" class="post-category">
-                                    <%- category.name %>
-                                </a>
+                            <a href="<%- url_for(category.path) %>" class="post-category">
+                                <%- category.name %>
+                            </a>
                             <% }); %>
                         </div>
                     <% } %>
@@ -48,13 +48,13 @@
                 <% } %>
 
                 <!--  添加作者信息 -->
-                <!--                <div class="info-break-policy">-->
-                <!--                    <% if (page.author && page.author.length > 0) { %>-->
-                <!--                        <i class="fa fa-pencil"></i> 作者: <%- page.author %>-->
-                <!--                    <% } else { %>-->
-                <!--                        <i class="fa fa-pencil"></i> 作者: <%- config.author %>-->
-                <!--                    <% } %>-->
-                <!--                </div>-->
+                <!--   <div class="info-break-policy">
+                    <% if (page.author && page.author.length > 0) { %>
+                        <i class="fa fa-pencil"></i> 作者: <%- page.author %>
+                    <% } else { %>
+                        <i class="fa fa-pencil"></i> 作者: <%- config.author %>
+                    <% } %>
+                </div>-->
 
                 <% if (theme.postInfo.wordCount) { %>
                     <div class="info-break-policy">

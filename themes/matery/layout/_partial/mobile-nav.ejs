@@ -1,4 +1,5 @@
 <div id="mobile-nav" class="side-nav sidenav">
+
     <div class="mobile-head bg-color">
         <% if (theme.logo !== undefined && theme.logo.length > 0) { %>
             <img src="<%= theme.logo %>" class="logo-img circle responsive-img">
@@ -12,6 +13,7 @@
             <% } %>
         </div>
     </div>
+
     <%
     var menuMap = new Map();
     menuMap.set("Index", "首页");
@@ -21,6 +23,7 @@
     menuMap.set("About", "关于");
     menuMap.set("Friends", "友情链接");
     %>
+
     <ul class="menu-list mobile-menu-list">
         <% Object.keys(theme.menu).forEach(function(key) { %>
             <li class="m-nav-item">
@@ -44,8 +47,8 @@
                         <span class="m-icon"><i class="fas fa-chevron-right"></i></span>
                     </a>
                     <ul
-                    <% if(theme.navMenu && theme.navMenu.bgColor){ %>
-                        style="background: <%- theme.navMenu.bgColor %>;"
+                            <% if(theme.navMenu && theme.navMenu.bgColor){ %>
+                            style="background: <%- theme.navMenu.bgColor %>;"
                             <% } %>
                     >
                         <% for(let childrenLink of theme.menu[key].children){ %>

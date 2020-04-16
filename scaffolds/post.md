@@ -2,8 +2,8 @@
 title: {{ title }}
 date: {{ date }}
 author: 墨白
-img: 
-coverImg: 
+img: /medias/featureimages/.jpg
+coverImg: /medias/featureimages/.jpg
 top: false
 cover: false
 abbrlink: 

@@ -4,22 +4,18 @@ var audiosJson = JSON.stringify(site.data.musics);
 
 <link rel="stylesheet" href="<%- theme.libs.css.aplayer %>">
 <div class="<% if (theme.music.enable && !theme.music.fixed) { %>music-player<% } %>">
-<!--<div class="music-player">-->
     <% if (theme.music.showTitle) { %>
         <div class="title center-align">
             <i class="fas fa-music"></i>&nbsp;&nbsp;<%- theme.music.title %>
         </div>
     <% } %>
     <div class="row">
-        <!-- 原主题样式 <div class="col l8 offset-l2 m10 offset-m1 s12">-->
-        <div class="col s12 ">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
             <div id="aplayer" class="music"></div>
         </div>
     </div>
 </div>
-
 <script src="<%- theme.libs.js.aplayer %>"></script>
-
 <script>
     $(function () {
         new APlayer({

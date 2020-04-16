@@ -106,8 +106,6 @@ feed:
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
-
-
 # 文章分页
 index_generator:
   path: ''
@@ -154,8 +152,8 @@ theme: matery
 #   root@CVM 193.112.154.112:/home/git/mobaiBlog
 deploy:
   - type: git
-    repo:
-      coding: # https://e.coding.net/mobaijun/
+    repo: 
+      coding: # 你的仓库地址
     branch: master
   - type: baidu_url_submitter
 
@@ -171,9 +169,9 @@ baidu_url_submit:
   count: 80             # 提交最新的一个链接
   host: mobaijun.com   # 在百度站长平台中注册的域名
   token:  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里
-
-
+  path:   # 文本文档的地址， 新链接会保存在此文本文档里
+  
+  
 # hexo-neat 优化提速插件（去掉HTML、css、js的blank字符）
 neat_enable: true
 neat_html:
@@ -193,7 +191,7 @@ neat_js:
     - '**/*.min.js'
     - '**/**/instantpage.js'
     - '**/matery.js'
-
+    
 # CDN
 # CDN访问加速 
 # 第一次使用本功能，一定要先配置url，再`hexo cl&&hexo g&&hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
