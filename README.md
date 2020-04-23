@@ -1,4 +1,29 @@
-请您阅读时注意,这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎PR！
+<p align="center"><img width="15%" src="https://www.mobaijun.com/medias/avatar.jpg"/></p>
+<h4 align="center">框架师</h4>
+<table align="center">
+    <tr>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://gitee.com/static/images/logo-black.svg?t=158106664"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="http://pic.51yuansu.com/pic2/cover/00/30/78/581091674a0d3_610.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="http://i-2.yiwan.com/2015/10/24/765d53b8-d8f7-44b9-bd78-9807cc99ea3e.png"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://www.mobaijun.com/medias/avatar.jpg"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">Gitee</td>
+        <td align="center">GitHub</td>
+        <td align="center">Coding</td>
+        <td align="center">博客</td>
+    </tr>
+</table>
+
+请您阅读时注意,这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎给我`star`！
 
 **博客基于`Hexo`框架搭建，用到[hexo-theme-matery](https://github.com/shw2018/hexo-theme-matery)主题,并在此基础之上做了很多修改，修复了一些bug，增加了一些新的特性和功能，博客地址：[https://mobaijun.com](https://mobaijun.com)，博客演示：[mobaijun.com](https://mobaijun.com)。**
 
@@ -43,34 +68,45 @@
 - [x] 增加网站运行时间显示  
 - [x] 增加`动漫模型`     
 - [x] 整体替换Banner图片和文章特色图片
-- [ ] 加入`AES`加密方法,强效加密`文章内容`和`相册集`       
-- [ ] 去掉标签页,将其合并至`分类`页中                
+- [x] 加入`AES`加密方法
 - [x] 加入实用的快捷导航栏      
 - [x] 修改了一些控件的参数   
 - [x] 修改部分样式,比如: 文章卡片,固定高度,使其不至于因为文章摘要的长短不同导致卡片大小不一使页面布局很不美观,类似的还有友链卡片,优化了页面内容布局,视觉更整齐美观          
 - [x] 解决首页文章列表卡片上方 `border-radius`圆角失效的bug  
 - [x] 添加页面樱花飘落动效           
 - [x] 添加鼠标点击烟花爆炸动效   
-- [x] 加入天气接口控件   
 - [x] 加入鼠标点击文字特效   
 - [x] 加入了网页加密功能,屏蔽鼠标右键键盘事件
 - [x] 添加页面雪花飘落动效            
 - [x] 添加在线聊天插件            
 - [x] 调整线聊天插件参数，使之能够随着鼠标滑动位置自适应调整 
+- [x] 加入了首页自动获取段子
+- [x] 加入了自动获取古诗词
+- [x] 解决了分页加载头部音乐/视频/格言bug
+- [x] 替换搜索框样式和背景
+- [x] 修改首页名称字体
 - [ ] 持续更新...
 
 >**更多详情教程，强烈推荐看我写的：[ windows环境下搭建一个Hexo博客 ]( https://mobaijun.com/posts/259861027.html )**
-
+>
 >**最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我`star`，谢谢您！**
 
 有什么问题可以在文章最后评论区**留言和讨论**，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～
-<table>
+<table align="center">
     <tr>
-        <td><img width="150px" height="150px"
-                 src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/alipay.jpg"></td>
-        <td><img width="150px" height="150px"
-                 src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/wechat.jpg"></td>
-        <td><img width="150px" height="150px"
-                 src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/zan.jpg"></td>
+        <td align="center"><img width="200px" height="200px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/alipay.jpg"/>
+        </td>
+        <td align="center"><img width="200px" height="200px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/wechat.jpg"/>
+        </td>
+        <td align="center"><img width="200px" height="200px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/zan.jpg"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">支付宝</td>
+        <td align="center">微信支付</td>
+        <td align="center">赞赏</td>
     </tr>
 </table>

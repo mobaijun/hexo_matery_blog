@@ -1,4 +1,11 @@
 /*全局基础样式*/
+/*
+整个网站变灰
+html {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(100%);
+}
+*/
 /*小屏幕下(手机类)的样式*/
 @media only screen and (max-width: 601px) {
     .container {
@@ -247,8 +254,10 @@ mark {
     margin-bottom: 0;
 }
 
+/*导航栏颜色*/
 .bg-color {
     background-image: linear-gradient(to right, #595c58 0%, #595a59 100%);
+    opacity: 1;
 }
 
 .text-color {
@@ -302,8 +311,12 @@ header .brand-logo .logo-img {
     padding-bottom: 6px;
 }
 
+/*修改导航名称字体颜色*/
 header .brand-logo .logo-span {
     font-size: 2rem;
+    font-family: 楷体;
+    /*添加颜色*/
+    /*color: #00bcd4;*/
 }
 
 header .button-collapse i {
@@ -594,96 +607,12 @@ header .go-back i {
     font-size: 3rem;
 }
 
+/*页头颜色*/
 @-webkit-keyframes rainbow {
-
-    /* 0%,
-    100% {
-        background: rgba(156, 39, 176, 0.75);
-        background: linear-gradient(45deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-        background: -moz-linear-gradient(135deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-    }
-
-    16% {
-        background: rgba(132, 13, 121, 0.75);
-        background: linear-gradient(45deg, rgba(132, 13, 121, 0.75) 0%, rgba(132, 13, 121, 0.65) 100%);
-        background: -moz-linear-gradient(135deg, rgba(132, 13, 121, 0.75) 0%, rgba(132, 13, 121, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(132, 13, 121, 0.75) 0%, rgba(132, 13, 121, 0.65) 100%);
-    }
-
-    32% {
-        background: rgba(239, 83, 80, 0.75);
-        background: linear-gradient(45deg, rgba(239, 83, 80, 0.75) 0%, rgba(239, 83, 80, 0.65) 100%);
-        background: -moz-linear-gradient(135deg, rgba(239, 83, 80, 0.75) 0%, rgba(239, 83, 80, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(239, 83, 80, 0.75) 0%, rgba(239, 83, 80, 0.65) 100%);
-    }
-
-    48% {
-        background: rgba(255, 87, 34, 0.75);
-        background: linear-gradient(45deg, rgba(255, 87, 34, 0.75) 0%, rgba(255, 87, 34, 0.65) 100%);
-        background: -moz-linear-gradient(135deg, rgba(255, 87, 34, 0.75) 0%, rgba(255, 87, 34, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(255, 87, 34, 0.75) 0%, rgba(255, 87, 34, 0.65) 100%);
-    }
-
-    64% {
-        background: rgba(255, 160, 0, 0.75);
-        background: linear-gradient(45deg, rgba(255, 160, 0, 0.75) 0%, rgba(255, 160, 0, 0.65) 100%);
-        background: -moz-linear-gradient(135deg, rgba(255, 160, 0, 0.75) 0%, rgba(255, 112, 66, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(255, 160, 0, 0.75) 0%, rgba(255, 160, 0, 0.65) 100%);
-    }
-
-    80% {
-        background: rgba(233, 30, 99, 0.75);
-        background: linear-gradient(45deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-        background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-        background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-    }*/
 }
 
+/*页脚颜色*/
 @keyframes rainbow {
-
-    /* 0%,
-     100% {
-         background: rgba(156, 39, 176, 0.75);
-         background: linear-gradient(45deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-         background: -moz-linear-gradient(135deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-         background: -webkit-linear-gradient(135deg, rgba(156, 39, 176, 0.75) 0%, rgba(156, 39, 176, 0.65) 100%);
-     }
-
-     16% {
-         background: rgba(132, 13, 121, 0.75);
-         background: linear-gradient(45deg, rgba(132, 13, 121, 0.75) 0%, rgba(132, 13, 121, 0.65) 100%);
-         background: -moz-linear-gradient(135deg, rgba(132, 13, 121, 0.75) 0%, rgba(132, 13, 121, 0.65) 100%);
-         background: -webkit-linear-gradient(135deg, rgba(132, 13, 121, 0.75) 0%, rgba(132, 13, 121, 0.65) 100%);
-     }
-
-     32% {
-         background: rgba(239, 83, 80, 0.75);
-         background: linear-gradient(45deg, rgba(239, 83, 80, 0.75) 0%, rgba(239, 83, 80, 0.65) 100%);
-         background: -moz-linear-gradient(135deg, rgba(239, 83, 80, 0.75) 0%, rgba(239, 83, 80, 0.65) 100%);
-         background: -webkit-linear-gradient(135deg, rgba(239, 83, 80, 0.75) 0%, rgba(239, 83, 80, 0.65) 100%);
-     }
-
-     48% {
-         background: rgba(255, 87, 34, 0.75);
-         background: linear-gradient(45deg, rgba(255, 87, 34, 0.75) 0%, rgba(255, 87, 34, 0.65) 100%);
-         background: -moz-linear-gradient(135deg, rgba(255, 87, 34, 0.75) 0%, rgba(255, 87, 34, 0.65) 100%);
-         background: -webkit-linear-gradient(135deg, rgba(255, 87, 34, 0.75) 0%, rgba(255, 87, 34, 0.65) 100%);
-     }
-
-     64% {
-         background: rgba(255, 160, 0, 0.75);
-         background: linear-gradient(45deg, rgba(255, 160, 0, 0.75) 0%, rgba(255, 160, 0, 0.65) 100%);
-         background: -moz-linear-gradient(135deg, rgba(255, 160, 0, 0.75) 0%, rgba(255, 112, 66, 0.65) 100%);
-         background: -webkit-linear-gradient(135deg, rgba(255, 160, 0, 0.75) 0%, rgba(255, 160, 0, 0.65) 100%);
-     }
-
-     80% {
-         background: rgba(233, 30, 99, 0.75);
-         background: linear-gradient(45deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
-     } */
 }
 
 .index-card {
@@ -713,10 +642,11 @@ header .go-back i {
     font-size: 1.1rem;
 }
 
+/*修改音乐宽度*/
 .music-player,
 .video-player {
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .music,
@@ -729,8 +659,9 @@ header .go-back i {
     padding-top: 30px;
 }
 
+/*修改推荐文章页大小*/
 .index-card .card .card-content {
-    padding: 20px 40px;
+    padding: 5px 5px;
 }
 
 @media only screen and (min-width: 1418px) {
@@ -886,13 +817,14 @@ article a:hover {
 }
 
 article .card {
-    border-radius: 8px;
+    /*解决文章卡片上方border-radius失效的bug 原值 8px*/
+    border-radius: 5px;
     overflow: hidden;
 }
 
 article .card-image {
     background-color: #222;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 article .card-image img {
@@ -1834,14 +1766,22 @@ footer .copy-right {
     font-size: 1.2rem;
 }
 
+/*背景色*/
 #searchModal {
     min-height: 500px;
     width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+/*输入框文字*/
+#searchInput {
+    color: #fff;
+}
+
+/*标题*/
 #searchModal .search-header .title {
     font-size: 1.6rem;
-    color: #333;
+    color: coral;
 }
 
 #searchResult {
@@ -1960,7 +1900,7 @@ footer .copy-right {
     overflow: hidden;
 }
 
-/* styles for '...' */
+/* 修改主页文章标签下面文字行数  */
 .block-with-text {
     /* hide text if it more than N lines  */
     overflow: hidden;
@@ -1969,7 +1909,7 @@ footer .copy-right {
     /* use this value to count block height */
     line-height: 1.5em;
     /* max-height = line-height (1.2) * lines max number (3) */
-    max-height: 4.5em;
+    max-height: 3em;
     /* fix problem when last visible word doesn't adjoin right side  */
     text-align: justify;
     /* place for '...' */
