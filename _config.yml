@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://mobaijun.com
+url: https://www.mobaijun.com
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html
@@ -90,7 +90,7 @@ feed:
 
 # douban电影
 douban:
-  user: 208541017
+  user: # UserID
   builtin: true
 book:
     title: '书籍'
@@ -168,7 +168,7 @@ lazyload:
 # 百度站长
 baidu_url_submit:
   count: 80             # 提交最新的一个链接
-  host: mobaijun.com   # 在百度站长平台中注册的域名
+  host: www.mobaijun.com   # 在百度站长平台中注册的域名
   token:  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path:   # 文本文档的地址， 新链接会保存在此文本文档里
   
