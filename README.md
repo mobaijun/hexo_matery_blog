@@ -3,25 +3,34 @@
 <table align="center">
     <tr>
         <td align="center"><img width="78px" height="78px"
-                                src="https://gitee.com/static/images/logo-black.svg?t=158106664"/>
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/7.jpg"/>
         </td>
         <td align="center"><img width="78px" height="78px"
-                                src="http://pic.51yuansu.com/pic2/cover/00/30/78/581091674a0d3_610.jpg"/>
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/4.jpg"/>
         </td>
         <td align="center"><img width="78px" height="78px"
-                                src="http://i-2.yiwan.com/2015/10/24/765d53b8-d8f7-44b9-bd78-9807cc99ea3e.png"/>
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/1.jpg"/>
         </td>
         <td align="center"><img width="78px" height="78px"
-                                src="https://www.mobaijun.com/medias/avatar.jpg"/>
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/2.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/3.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/6.jpg"/>
         </td>
     </tr>
     <tr>
-        <td align="center">Gitee</td>
-        <td align="center">GitHub</td>
+        <td align="center">Hexo</td>
         <td align="center">Coding</td>
-        <td align="center">博客</td>
+        <td align="center">闪烁之狐</td>
+        <td align="center">洪卫的博客</td>
+        <td align="center">码云</td>
+        <td align="center">框架师</td>
     </tr>
 </table>
+
 
 请您阅读时注意,这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎给我`star`！
 

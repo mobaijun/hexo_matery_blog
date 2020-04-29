@@ -17,17 +17,10 @@ layout: "about"
   > 微信公众号：【框架师|ID:mohu121】
   >
   > 个人微信:WLJ1916{墨小帝}
-
-  <font color="#000000"><p align="center">扫码关注我的公众号</p></font>
-
   <table>
-      <tr>
-      <div align="center"><img width="350px" height="350px"
-              src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/about.jpg" /></div>
-      </tr>
+      <p align="center"><img width="30%" src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/about.jpg"/></p>
+      <h5 align="center" color="#000000">扫码关注我的公众号</h5>
   </table>
-
-  
 
 
 * ### <b>广告及推广合作</b>
@@ -60,13 +53,14 @@ layout: "about"
 	
 	> 1、你凝视着深渊时，深渊也在凝视着你 			------尼采
 
-
 # 教育经历
+
 * ### <b>本科 金融学</b>
 
    > 中南财经大学
 
 # 其他联系方式
+
 * ### <b>电子邮箱</b>
 
    > mobaijun8@163.com
@@ -74,3 +68,38 @@ layout: "about"
 * ### <b>目前地址</b>
 
    > 广东省|广州市|番禺区  
+
+# 感谢以下成员的技术支持
+
+<table align="center">
+    <h5 align="center" color="#000000">技术支持</h5>
+    <tr>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/7.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/4.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/1.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/2.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/3.jpg"/>
+        </td>
+        <td align="center"><img width="78px" height="78px"
+                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/6.jpg"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">Hexo</td>
+        <td align="center">Coding</td>
+        <td align="center">闪烁之狐</td>
+        <td align="center">洪卫的博客</td>
+        <td align="center">码云</td>
+        <td align="center">框架师</td>
+    </tr>
+</table>
+

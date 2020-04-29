@@ -1,31 +1,49 @@
+<!--GitHub-->
+<% if (theme.socialLink.github) { %>
+    <a href="<%= theme.socialLink.github %>" class="tooltipped" target="_blank"
+       data-tooltip="github: <%= theme.socialLink.github %>" data-position="top" data-delay="50">
+        <i class="fab fa-github-alt"></i>
+    </a>
+<% } %>
+
+<!--CSDN-->
 <% if (theme.socialLink.csdn) { %>
     <a href="<%= theme.socialLink.csdn %>" class="tooltipped" target="_blank"
        data-tooltip="csdn: <%= theme.socialLink.csdn %>" data-position="top" data-delay="50">
-        <i class="fab fa-cuttlefish"></i>
+        <!-- 修改Blog图标-->
+        <i class="fas fa-copyright"></i>
+        <!-- <i class="fab fa-cuttlefish"></i>-->
     </a>
 <% } %>
 
+<!--码云GitEE-->
 <% if (theme.socialLink.gitee) { %>
     <a href="<%= theme.socialLink.gitee %>" class="tooltipped" target="_blank" data-tooltip="码云"
        data-position="top" data-delay="50">
-        <i class="fab fa-free-code-camp"></i>
+        <i class="fab fa-gofore"></i>
     </a>
 <% } %>
 
+<!--学习资料-->
 <% if (theme.socialLink.java) { %>
     <a href="<%= theme.socialLink.java %>" class="tooltipped" target="_blank"
        data-tooltip="java: <%= theme.socialLink.java %>" data-position="top" data-delay="50">
-        <i class="fab fa-get-pocket"></i>
+        <!-- <i class="fab fa-get-pocket"></i>-->
+        <!--修改为小飞人-->
+        <i class="fab fa-studiovinari"></i>
     </a>
 <% } %>
 
+<!--Email邮箱-->
 <% if (theme.socialLink.email) { %>
     <a href="mailto:<%= theme.socialLink.email %>" class="tooltipped" target="_blank" data-tooltip="邮件联系我"
        data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
+        <!--<i class="fas fa-envelope-open"></i>-->
+        <i class="fas fa-at"></i>
     </a>
 <% } %>
 
+<!--微信关注-->
 <% if (theme.socialLink.wechat) { %>
     <a href="<%= theme.socialLink.wechat %>" class="tooltipped" target="_blank"
        data-tooltip="wechat: <%= theme.socialLink.wechat %>" data-position="top" data-delay="50">
@@ -33,6 +51,7 @@
     </a>
 <% } %>
 
+<!--QQ-->
 <% if (theme.socialLink.qq) { %>
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=<%= theme.socialLink.qq %>" class="tooltipped"
        target="_blank" data-tooltip="QQ联系我: <%= theme.socialLink.qq %>" data-position="top" data-delay="50">
@@ -40,7 +59,7 @@
     </a>
 <% } %>
 
-
+<!--知乎-->
 <% if (theme.socialLink.zhihu) { %>
     <a href="<%= theme.socialLink.zhihu %>" class="tooltipped" target="_blank"
        data-tooltip="关注我的知乎: <%= theme.socialLink.zhihu %>" data-position="top" data-delay="50">

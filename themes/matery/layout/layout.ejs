@@ -33,43 +33,6 @@
     <script type="text/javascript" src="/js/fireworks.js"></script>
 <% } %>
 
-<!--添加鼠标跟随星星特效-->
-<% if (theme.xingxing.enable) { %>
-    <script type="text/javascript">
-        //只在桌面版网页启用特效
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/xingxing.js"><\/script>');
-        }
-    </script>
-<% } %>
-
-<!-- 背景雪花飘落特效-->
-<% if (theme.sakura.enable) { %>
-    <script type="text/javascript">
-        //只在桌面版网页启用特效
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-        }
-    </script>
-<% } %>
-
-<!-- 鼠标点击文字特效-->
-<% if (theme.wenzi.enable) { %>
-    <script src="/js/wenzi.js" type="text/javascript"></script>
-<% } %>
-
-<!-- 背景雪花飘落特效-->
-<% if (theme.xuehuapiaoluo.enable) { %>
-    <script type="text/javascript">
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
-        }
-    </script>
-<% } %>
-
 <!--添加屏蔽网页源码-->
 <script type="text/javascript">
     window.onload = function () {

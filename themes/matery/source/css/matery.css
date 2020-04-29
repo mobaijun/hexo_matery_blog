@@ -16,21 +16,15 @@ html {
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .container {
-        width: 90%;
+        width: 95%;
     }
 }
 
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .container {
-        width: 90%;
+        width: 85%;
         max-width: 1125px;
-    }
-
-    .head-container {
-        position: absolute;
-        padding: 0px 30px;
-        width: 100%;
     }
 
     .post-container {
@@ -40,49 +34,56 @@ html {
     }
 }
 
+/*背景调试*/
 body {
-    background-color: #eaeaea;
+    /*background:url("/medias/banner/4.jpg");*/
+    /*background-attachment: fixed;*/
+    background-color: #fff;
     margin: 0;
+    /*字体加粗*/
+    /*font-weight: lighter;*/
     color: #34495e;
 }
 
+
+/* 文章导航 */
 h1 {
-    margin: 48px 0 22px -5px;
+    margin: 38px 0 22px -5px;
     font-size: 2.0rem;
     font-weight: bold;
     line-height: 2.0rem;
 }
 
 h2 {
-    margin: 42px 0 18px -5px;
+    margin: 32px 0 18px -5px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
 }
 
 h3 {
-    margin: 38px 0 15px -4px;
+    margin: 28px 0 15px -4px;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.7rem;
 }
 
 h4 {
-    margin: 32px 0 12px -4px;
+    margin: 24px 0 12px -4px;
     font-size: 1.45rem;
     font-weight: bold;
     line-height: 1.45rem;
 }
 
 h5 {
-    margin: 28px 0 8px -4px;
+    margin: 20px 0 8px -4px;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.2rem;
 }
 
 h6 {
-    margin: 22px 0 4px -4px;
+    margin: 16px 0 4px -4px;
     font-size: 1.1rem;
     line-height: 1.1rem;
 }
@@ -98,6 +99,7 @@ hr {
     border-top: 1px solid #ccc;
 }
 
+/*引用代码块*/
 blockquote {
     border-left: 5px solid #42b983;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
@@ -105,19 +107,20 @@ blockquote {
     background-color: rgba(66, 185, 131, .1);
 }
 
-.line-numbers-rows {
-    border-right-width: 0px !important;
-}
+/*.line-numbers-rows {*/
+/*    border-right-width: 0px !important;*/
+/*}*/
 
-.line-numbers {
-    padding: 1.5rem 1.5rem 1.5rem 3.5rem !important;
-    margin: 1rem 0 !important;
-    background: #272822;
-    overflow: auto;
-    border-radius: 0.35rem;
-    tab-size: 4;
-}
+/*.line-numbers {*/
+/*    padding: 1.5rem 1.5rem 1.5rem 3.5rem !important;*/
+/*    margin: 1rem 0 !important;*/
+/*    background: #272822;*/
+/*    overflow: auto;*/
+/*    border-radius: 0.35rem;*/
+/*    tab-size: 4;*/
+/*}*/
 
+/*修改一下才能正确显示行号,而不是一条竖线*/
 pre {
     padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
     margin: 1rem 0 !important;
@@ -127,6 +130,17 @@ pre {
     tab-size: 4;
 }
 
+code {
+    padding: 1px 5px;
+    top: 13px !important;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    font-size: 0.91rem;
+    color: #e96900;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+}
+
+/*mac代码块样式*/
 .code-area::after {
     content: " ";
     position: absolute;
@@ -141,16 +155,7 @@ pre {
     box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
 }
 
-code {
-    padding: 1px 5px;
-    top: 13px !important;
-    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
-    /*font-size: 0.91rem;*/
-    color: #e96900;
-    background-color: #f8f8f8;
-    border-radius: 2px;
-}
-
+/*代码复制*/
 .code_copy {
     position: absolute;
     top: 0.7rem;
@@ -160,6 +165,7 @@ code {
     cursor: pointer;
 }
 
+/*代码复制通知*/
 .codecopy_notice {
     position: absolute;
     top: 0.7rem;
@@ -169,6 +175,7 @@ code {
     opacity: 0;
 }
 
+/*修改markdown代码块代码名称*/
 .code_lang {
     position: absolute;
     top: 1.2rem;
@@ -181,6 +188,7 @@ code {
     cursor: pointer;
 }
 
+/*代码拓展*/
 .code-expand {
     position: absolute;
     top: 4px;
@@ -202,6 +210,7 @@ code {
     height: 0px;
 }
 
+/*编码*/
 pre code {
     padding: 0;
     color: #e8eaf6;
@@ -242,12 +251,12 @@ mark {
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
 .card .card-image img {
-    border-radius: 8px 8px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .container .row {
@@ -256,8 +265,9 @@ mark {
 
 /*导航栏颜色*/
 .bg-color {
-    background-image: linear-gradient(to right, #595c58 0%, #595a59 100%);
-    opacity: 1;
+    background-image: linear-gradient(to right, #585858 0%, #585858 100%);
+    opacity: 0.9;
+    /* 透明度*/
 }
 
 .text-color {
@@ -268,13 +278,13 @@ mark {
     color: #fff;
 }
 
+/*底部进度条*/
 .progress-bar {
-    height: 4px;
+    height: 5px;
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-    opacity: 0.8;
+    background: linear-gradient(to right, #aab5f0 0%, #aeea00 100%);    opacity: 0.7;
 }
 
 .sidenav-overlay {
@@ -327,21 +337,23 @@ header .side-nav .mobile-head {
     padding: 0 15px;
 }
 
+/*手机端logo*/
 header .side-nav .mobile-head img {
-    margin-top: 30px;
+    margin-top: 15px;
     width: 75px;
     height: 75px;
 }
 
+/*手机端侧边栏名称*/
 header .side-nav .mobile-head .logo-name {
     margin-top: -30px;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     font-size: 1.5rem;
 }
 
+/*侧边栏个人信息*/
 header .side-nav .mobile-head .logo-desc {
     margin-top: -10px;
-    padding-left: 10px;
     padding-bottom: 10px;
     font-size: 0.8rem;
     line-height: 1.3rem;
@@ -350,7 +362,8 @@ header .side-nav .mobile-head .logo-desc {
 
 header .side-nav .menu-list li {
     padding: 0;
-    margin-left: -15px;
+    /*原值-15*/
+    margin-left: -25px;
 }
 
 header .side-nav .menu-list a {
@@ -377,7 +390,7 @@ header .side-nav .social-link {
 }
 
 .social-link a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: inline;
     padding: 0 12px;
 }
@@ -615,6 +628,10 @@ header .go-back i {
 @keyframes rainbow {
 }
 
+.carousel .indicators {
+    padding-bottom: 10px !important;
+}
+
 .index-card {
     margin-top: -10px;
     padding-top: 20px;
@@ -685,18 +702,20 @@ header .go-back i {
 }
 
 .recommend .row .col {
-    padding: 0 1.25rem;
+    padding: 0 1.0rem;
 }
 
 .recommend .title {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    /*原值25*/
+    margin-bottom: 10px;
+    /*原值25*/
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.8rem;
 }
-
+/*首页推荐*/
 .recommend .post-card:before {
     position: absolute;
     z-index: 0;
@@ -779,6 +798,7 @@ header .go-back i {
     padding-right: 10px;
 }
 
+/*归档日历*/
 .archive-calendar {
     margin-top: -60px;
     max-width: 820px;
@@ -966,10 +986,17 @@ article .article-tags .chip {
     margin-right: 0 !important;
     text-transform: none !important;
 }
-
-#artDetail .article-info {
+/* #artDetail .article-info {
     padding: 20px 30px 1px 40px;
     margin-bottom: -5px;
+} */
+#artDetail .article-info {
+    padding: 20px 20px 1px 25px;
+    margin-bottom: -5px;
+}
+
+#artDetail .article-tag {
+    float: left;
 }
 
 #artDetail .article-tag .chip {
@@ -1069,21 +1096,36 @@ article .article-tags .chip {
 
 @media only screen and (min-width: 993px) {
     #artDetail .article-card-content {
-        padding: 0 50px 20px 50px;
+        padding: 0 25px 20px 25px;
     }
 }
 
-#artDetail .reprint {
+/*下面连着三段是老版reprint样式*/
+#artDetail .reprint1 {
     margin: 15px 0 5px 0;
-    margin-bottom: 0.4rem;
-    padding: 0.5rem 0.8rem;
-    border: 1px solid #eee;
-    line-height: 2;
-    transition: box-shadow 0.3s ease-in-out
 }
 
-#artDetail .reprint:hover {
-    box-shadow: 0 0 10px 0 rgba(232, 237, 250, .6), 0 4px 8px 0 rgba(232, 237, 250, .5)
+#artDetail .reprint1 .reprint1-tip {
+    margin-right: 3px;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+#artDetail .reprint1 a {
+    font-size: 1.05rem;
+    color: #42b983;
+    font-weight: 500;
+}
+
+/*下面连着三段是reprint-statement样式*/
+#artDetail .reprint {
+    margin: 15px 0 5px 0;
+}
+
+#artDetail .reprint .reprint-tip {
+    margin: 0 3px 22px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 #artDetail .reprint a {
@@ -1091,6 +1133,10 @@ article .article-tags .chip {
     color: #42b983;
     font-weight: 500;
 }
+
+/*#artDetail .reprint:hover {*/
+/*    box-shadow: 0 0 10px 0 rgba(232, 237, 250, .6), 0 4px 8px 0 rgba(232, 237, 250, .5)*/
+/*}*/
 
 #articleContent p {
     margin: 2px 2px 10px;
@@ -1220,12 +1266,15 @@ thead {
 
 .chip-container .chip {
     margin: 10px 10px;
-    padding: 19px 14px;
-    display: inline-flex;
-    line-height: 0;
+    padding: 0 14px;
+    display: inline-block;
+    height: 38px;
+    min-width: 80px;
+    line-height: 39px;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
+    word-wrap: break-word;
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
 }
@@ -1301,7 +1350,7 @@ thead {
 }
 
 #cd-timeline::before {
-    /* this is the vertical line */
+    /* 归档时间线 */
     content: '';
     position: absolute;
     top: 0;
@@ -1419,6 +1468,7 @@ thead {
     margin: 0;
 }
 
+/*时间线内容*/
 .cd-timeline-content::before {
     content: '';
     position: absolute;
@@ -1490,8 +1540,19 @@ thead {
     }
 }
 
-/* about page styles. */
+.contact-container {
+    width: 90%;
+    max-width: 900px;
+    margin-top: -60px;
+}
 
+@media only screen and (max-width: 600px) {
+    .contact-container {
+        width: 95%;
+    }
+}
+
+/* about page styles. */
 .about-container {
     width: 90%;
     max-width: 1225px;
@@ -1503,7 +1564,6 @@ thead {
         width: 95%;
     }
 }
-
 .post-statis {
     text-align: center;
 }
@@ -1536,6 +1596,7 @@ thead {
     text-align: center;
 }
 
+/*友链*/
 #aboutme .social-link a {
     display: inline-block;
     width: 2.3rem;
@@ -1612,6 +1673,7 @@ thead {
     padding: 1rem 0 1rem;
 }
 
+/*我的项目*/
 .my-projects .info .icon {
     display: inline-block;
     width: 76px;
@@ -1749,12 +1811,14 @@ footer {
 }
 
 footer .social-statis {
-    margin-top: 10px;
+    margin-top: 26px;
+    /* 原值 10px; */
     position: relative;
 }
 
+/*页脚样式*/
 footer a {
-    color: #fff;
+    color: #dbdbdb;
 }
 
 footer .copy-right {
@@ -1766,7 +1830,7 @@ footer .copy-right {
     font-size: 1.2rem;
 }
 
-/*背景色*/
+/*搜索框背景色*/
 #searchModal {
     min-height: 500px;
     width: 80%;
@@ -1876,8 +1940,9 @@ footer .copy-right {
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2), 0 10px 30px -11px rgba(0, 0, 0, .6)
 }
 
+/*修改过*/
 .img-margin {
-    margin: 25px auto 10px auto;
+    margin: 2px auto 5px auto;
 }
 
 .caption {
@@ -1951,7 +2016,7 @@ footer .copy-right {
 
 .nav-menu li .sub-nav {
     position: absolute;
-    top: 66px;
+    top: 77px;
     list-style: none;
     margin-left: -20px;
     display: none;
@@ -2019,14 +2084,16 @@ footer .copy-right {
 
 .m-nav-item {
     position: relative;
+    left: 45px;
 }
 
 .m-nav-item ul {
     display: none;
+    background: rgba(255, 255, 255, .1);
 }
 
 .m-nav-item ul li {
-    width: 255px;
+    width: 245px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -2058,8 +2125,13 @@ footer .copy-right {
 
 .m-nav-item .m-icon {
     position: absolute;
-    right: 15px;
+    right: 65px;
     height: 50px;
     padding: 0px;
     margin: 0px;
+}
+/*导航页*/
+.nav-item li:hover a {
+    color: #FFF;
+    background: rgba(0, 0, 0, .1);
 }

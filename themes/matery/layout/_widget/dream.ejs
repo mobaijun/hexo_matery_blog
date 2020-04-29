@@ -6,7 +6,10 @@
     <% } %>
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            <%- theme.dream.text %>
+            <!-- 原数据<%- theme.dream.text %> -->
+            <!-- 设置格言自动更新 -->
+            <span id="hitokoto"><%- theme.dream.text %></span>
+            <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
         </div>
     </div>
 </div>

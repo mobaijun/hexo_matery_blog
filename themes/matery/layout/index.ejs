@@ -59,7 +59,7 @@
             <% page.posts.forEach(post => { %>
                 <div class="article col s12 m6 l4" data-aos="zoom-in">
                     <div class="card">
-                        <a href="<%- url_for(post.path) %>">
+                        <a href="<%- url_for(post.path) %>" target="_blank">
                             <div class="card-image">
                                 <% if (post.img) { %>
                                     <img src="<%= post.img %>" class="responsive-img" alt="<%- post.title %>">
@@ -91,22 +91,18 @@
                             </div>
                             <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i><%= date(post.date, config.date_format) %>
+                                <!--设置时钟图标 -->
+                                <i class="fa fa-clock fa-fw icon-date"></i><%= date(post.date, config.date_format) %>
                             </span>
                                 <span class="publish-author">
                                     <% if (post.categories && post.categories.length > 0) { %>
-                                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                        <i class="fa fa-bookmark fa-fw icon-category"></i>
                                         <% post.categories.forEach(category => { %>
-                                            <a href="<%- url_for(category.path) %>" class="post-category">
+                                            <a href="<%- url_for(category.path) %>" class="post-category"
+                                               target="_blank">
                                     <%- category.name %>
                                 </a>
                                         <% }); %>
-                                    <% } else if (post.author && post.author.length > 0) { %>
-                                        <i class="fas fa-user fa-fw"></i>
-                                        <%- post.author %>
-                                    <% } else { %>
-                                        <i class="fas fa-user fa-fw"></i>
-                                        <%- config.author %>
                                     <% } %>
                                 </span>
                             </div>
@@ -115,7 +111,7 @@
                         <% if(post.tags && post.tags.length > 0) { %>
                             <div class="card-action article-tags">
                                 <% post.tags.forEach(tag => { %>
-                                    <a href="<%- url_for(tag.path) %>">
+                                    <a href="<%- url_for(tag.path) %>" target="_blank">
                                         <span class="chip bg-color"><%= tag.name %></span>
                                     </a>
                                 <% }); %>

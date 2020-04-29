@@ -88,19 +88,20 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
-# douban:
-#  user: 208541017
-#  builtin: true
-#  book:
-#    title: 'This is my book title'
-#    quote: 'This is my book quote'
-#  movie:
-#    title: '电影'
-#    quote: '墨白热爱祖国，积极向上，为人正直，工作勤奋，助人为乐。'
-#  game:
-#    title: '游戏'
-#    quote: '比游戏更加好玩的是代码!!!'
-#  timeout: 10000 
+# douban电影
+douban:
+  user: 208541017
+  builtin: true
+book:
+    title: '书籍'
+    quote: '书中自有黄金屋,书中自有颜如玉'
+movie:
+    title: '电影'
+    quote: '墨白热爱祖国，积极向上，为人正直，工作勤奋，助人为乐。'
+game:
+    title: '游戏'
+    quote: '比游戏更加好玩的是代码!!!'
+    timeout: 10000 
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')

@@ -156,7 +156,6 @@
             if (srcDiv.length === 0) {
                 return;
             }
-
             let w = srcDiv.width();
             if (w >= 450) {
                 w = w + 21;
@@ -176,10 +175,10 @@
         let $mainContent = $('#main-content');
         $('#floating-toc-btn .btn-floating').click(function () {
             if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
+                $tocAside.removeClass(expandedClass).slideUp(500);
                 $mainContent.removeClass('l9');
             } else {
-                $tocAside.addClass(expandedClass).show();
+                $tocAside.addClass(expandedClass).slideDown(500);
                 $mainContent.addClass('l9');
             }
             fixPostCardWidth('artDetail', 'prenext-posts');

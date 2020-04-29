@@ -1,9 +1,9 @@
 [
   {
-    "avatar": "https://mobaijun8.cn/medias/avatar.jpg",
+    "avatar": "https://www.mobaijun.com/medias/avatar.jpg",
     "name": "框架师",
     "introduction": "代码改变世界!!!",
-    "url": "http://mobaijun8.cn/",
+    "url": "https://www.mobaijun.com/",
     "title": "前去学习"
   },
   {
@@ -14,24 +14,24 @@
     "title": "前去学习"
   },
   {
-    "avatar": " http://hudiskoray.iicp.net:4000/img/avatar.jpg",
+    "avatar": "http://hudiskoray.iicp.net:4000/img/avatar.jpg",
     "name": " Jerry Huang",
     "introduction": "何以解忧 唯有暴富",
     "url": "http://hudiskoray.iicp.net:4000/",
     "title": "前去学习"
   },
   {
-    "avatar": "https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zatu/xcx.jpg",
-    "name": "小程序社区",
-    "introduction": "学习小程序,这个网站不错",
-    "url": "http://www.wxapp-union.com/",
+    "avatar": " https://www.qqdeveloper.com/images/avatar.jpg",
+    "name": "卡二条的技术圈",
+    "introduction": "勤记录、懂分享、日精进",
+    "url": "https://www.qqdeveloper.com",
     "title": "前去学习"
   },
   {
-    "avatar": "https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zatu/mima.jpg",
-    "name": "在线工具",
-    "introduction": "在线加密解密,这个网站不错",
-    "url": "https://tool.oschina.net/",
-    "title": "前去使用"
+    "avatar": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584444691678&di=f1cd0d0e59fa9a99ef2b5c1f3c14d156&imgtype=0&src=http%3A%2F%2Fp7.yokacdn.com%2Fpic%2FYOKA%2F2019-08-19%2FU10105P1TS1566206929_47171.jpg",
+    "name": "达达前端",
+    "introduction": "全栈技术，一个热爱前端的达达程序员。~",
+    "url": "http://www.dadaqianduan.cn",
+    "title": "前去学习"
   }
 ]

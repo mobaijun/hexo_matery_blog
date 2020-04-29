@@ -7,6 +7,7 @@
         padding: 20px 20px 5px 20px;
     }
 
+    /* valine 评论框增加背景图片 */
     #vcomments textarea {
         box-sizing: border-box;
         background: url("<%- theme.valine.background %>") 100% 100% no-repeat;
@@ -22,6 +23,7 @@
         text-indent: 0.2rem;
     }
 
+    /*回复颜色*/
     #vcomments a {
         padding: 0 2px;
         color: #4cbf30;
@@ -233,13 +235,13 @@
         visibility: visible;
     }
 </style>
-
 <div class="card valine-card" data-aos="fade-up">
-    <div class="comment_headling"
-         style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
+    <!--去除评论和图标-->
+    <!--<div class="comment_headling"-->
+    <!--  style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">-->
+    <!-- <i class="fas fa-comments fa-fw" aria-hidden="true"></i>-->
+    <!-- <span>评论</span>-->
+    <!--</div>-->
     <div id="vcomments" class="card-content" style="display: grid">
     </div>
 </div>
