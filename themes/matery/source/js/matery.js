@@ -103,7 +103,8 @@ $(function () {
         $('#articleContent, #myGallery').lightGallery({
             selector: '.img-item',
             // 启用字幕
-            subHtmlSelectorRelative: true
+            subHtmlSelectorRelative: true,
+            showThumbByDefault: false // 2020-4-30
         });
 
         // progress bar init
@@ -123,8 +124,7 @@ $(function () {
         $('body,html').animate({scrollTop: 0}, 400);
         return false;
     });
-
-    /*监听滚动条位置*/
+    // /*监听滚动条位置*/
     let $nav = $('#headNav');
     let $backTop = $('.top-scroll');
     // 当页面处于文章中部的时候刷新页面，因为此时无滚动，所以需要判断位置,给导航加上绿色。
@@ -145,7 +145,6 @@ $(function () {
             $backTop.slideDown(300);
         }
     }
-
 
     $(".nav-menu>li").hover(function () {
         $(this).children('ul').stop(true, true).show();

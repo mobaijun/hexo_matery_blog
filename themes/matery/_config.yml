@@ -15,21 +15,24 @@ menu:
   About:
     url: /about
     icon: fas fa-user-circle
-  书籍:
-    url: /books
-    icon: fas fa-book
-  电影:
-    url: /movies
-    icon: fas fa-film
-  游戏:
-    url: /games
-    icon: fas fa-gamepad
   Contact:
     url: /contact
     icon: fas fa-comments
   Friends:
     url: /friends
     icon: fas fa-address-book
+  Navigate:
+    url: /navigate
+    icon: fa fa-rocket
+    #  书籍:
+    #    url: /books
+    #    icon: fas fa-book
+    #  电影:
+    #    url: /movies
+    #    icon: fas fa-film
+    #  游戏:
+    #    url: /games
+    #    icon: fas fa-gamepad
   # 二级菜单写法如下
   #Medias:
   #  icon: fas fa-list
