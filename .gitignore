@@ -2,7 +2,9 @@
 Thumbs.db
 db.json
 *.log
-node_modules/
 public/
 .deploy*/
-.idea
+.vscode/
+node_modules/
+.idea/
+package-lock.json

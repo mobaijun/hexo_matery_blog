@@ -93,7 +93,7 @@ if (canvasEl) {
         numberOfParticules = 30,
         pointerX = 0, pointerY = 0,
         tap = "mousedown",
-        colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"],
+        colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C", "#00ae9d"],
         setCanvasSize = debounce(function () {
             canvasEl.width = 2 * window.innerWidth,
                 canvasEl.height = 2 * window.innerHeight,
@@ -197,7 +197,7 @@ if (canvasEl) {
         pointerX = 0,
         pointerY = 0,
         tap = "mousedown",
-        colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"],
+        colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C", "#00ae9d"],
         setCanvasSize = debounce(function () {
             canvasEl.width = 2 * window.innerWidth,
                 canvasEl.height = 2 * window.innerHeight,

@@ -38,7 +38,7 @@ html {
 body {
     /*background:url("/medias/banner/4.jpg");*/
     /*background-attachment: fixed;*/
-    background-color: #fff;
+    background-color: #d3d7d4;
     margin: 0;
     /*字体加粗*/
     /*font-weight: lighter;*/
@@ -265,7 +265,8 @@ mark {
 
 /*导航栏颜色*/
 .bg-color {
-    background-image: linear-gradient(to right, #585858 0%, #585858 100%);
+    /*https://wang_lianjie.gitee.io/mobai_images.gitee.io/ysbdq.html*/
+    background-image: linear-gradient(to right, #4f5555 0%, #4f5555 100%);
     opacity: 0.9;
     /* 透明度*/
 }
@@ -284,7 +285,8 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #aab5f0 0%, #aeea00 100%);    opacity: 0.7;
+    background: linear-gradient(to right, #2b6447 0%, #375830 100%);
+    opacity: 0.7;
 }
 
 .sidenav-overlay {
@@ -315,18 +317,19 @@ header nav .brand-span {
     font-size: 1.45rem;
 }
 
+/*修改logo边距尺寸*/
 header .brand-logo .logo-img {
-    height: 45px;
+    /*大小*/
+    height: 65px;
     vertical-align: middle;
-    padding-bottom: 6px;
+    /*边距*/
+    padding-bottom: 15px;
 }
 
 /*修改导航名称字体颜色*/
 header .brand-logo .logo-span {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 楷体;
-    /*添加颜色*/
-    /*color: #00bcd4;*/
 }
 
 header .button-collapse i {
@@ -715,6 +718,7 @@ header .go-back i {
     font-weight: 700;
     line-height: 1.8rem;
 }
+
 /*首页推荐*/
 .recommend .post-card:before {
     position: absolute;
@@ -986,6 +990,7 @@ article .article-tags .chip {
     margin-right: 0 !important;
     text-transform: none !important;
 }
+
 /* #artDetail .article-info {
     padding: 20px 30px 1px 40px;
     margin-bottom: -5px;
@@ -1244,9 +1249,11 @@ thead {
     font-weight: 400;
 }
 
+/*修改文章标签最大宽度*/
 .chip-container .tag-chips {
     margin: 1rem auto 0.5rem;
-    max-width: 850px;
+    /*max-width: 850px;*/
+    max-width: 98%;
     text-align: center;
 }
 
@@ -1564,6 +1571,7 @@ thead {
         width: 95%;
     }
 }
+
 .post-statis {
     text-align: center;
 }
@@ -1617,6 +1625,11 @@ thead {
     width: 100%;
     margin: 0 auto;
     transform: translate3d(0, -65%, 0);
+    transition: all 2.0s;
+}
+
+img:hover {
+    transform: rotate(360deg);
 }
 
 .profile .author {
@@ -1702,6 +1715,7 @@ thead {
     color: #999;
 }
 
+/*调整关于我技能栏*/
 .my-skills .skillbar {
     position: relative;
     display: block;
@@ -1772,18 +1786,20 @@ thead {
     font-size: 1.5rem;
 }
 
+/*调整关于我标签栏大小*/
 .other-skills .tag-chips {
-    max-width: 600px;
+    max-width: 98%;
 }
 
+/*调整关于我标签栏颜色*/
 .other-skills .chip {
-    background-color: #fff;
+    background-color: #fffffb;
     border: 1px solid #eee;
 }
 
 .other-skills .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #7fb80e 0%, #585eaa 100%);
     border: 1px solid #4cbf30;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
@@ -2130,6 +2146,7 @@ footer .copy-right {
     padding: 0px;
     margin: 0px;
 }
+
 /*导航页*/
 .nav-item li:hover a {
     color: #FFF;

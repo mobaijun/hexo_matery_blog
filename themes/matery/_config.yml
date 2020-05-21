@@ -23,32 +23,7 @@ menu:
     icon: fas fa-address-book
   Navigate:
     url: /navigate
-    icon: fa fa-rocket
-    #  书籍:
-    #    url: /books
-    #    icon: fas fa-book
-    #  电影:
-    #    url: /movies
-    #    icon: fas fa-film
-    #  游戏:
-    #    url: /games
-    #    icon: fas fa-gamepad
-  # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movie
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /book
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
+    icon: fas fa-location-arrow
 
 # Website start time.
 # 站点运行开始时间.
@@ -80,7 +55,7 @@ wordCount:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: true
+  enable: false
   showTitle: true
   title: 格言
   text: 君子之行，静以修身，俭以养德，非澹泊无以明志，非宁静无以致远。 汉末|蜀国|诸葛亮
@@ -99,12 +74,12 @@ music:
   preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false # 列表默认折叠
-  listMaxHeight: 197px #列表最大高度
+  listMaxHeight: 165px #列表最大高度
 
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: true
+  enable: false
   showTitle: true
   title: 视频
   url: https://wang_lianjie.gitee.io/mobai_blog.gitee.io/highway-loop.mp4 # 必填
@@ -143,7 +118,7 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github: https://github.com/mobaijun8/hexo_blog_matery
+  github: https://github.com/mobaijun/hexo_blog_matery
   csdn:  # https://blog.csdn.net/weixin_44326093
   gitee:  https://gitee.com/wang_lianjie/mobai_hexoBlog
   java: https://wang_lianjie.gitee.io/mobai_images.gitee.io/ziliaoxiazai.html
@@ -174,8 +149,8 @@ code:
 reward:
   enable: true
   title: 请我喝罐冰阔乐!
-  wechat: /medias/reward/wechat.jpg
-  alipay: /medias/reward/alipay.jpg
+  wechat: https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/wechat.jpg
+  alipay: https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/alipay.jpg
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -183,7 +158,7 @@ reward:
 copyright:
   enable: true
   minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
-  description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
+  description: 本文章著作权归墨白所有，任何形式的转载都请注明出处。
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
 # Considering that the mathjax loading is time consuming,
@@ -191,7 +166,7 @@ copyright:
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
-  enable: true
+  enable: false
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
@@ -220,47 +195,56 @@ profile:
 myProjects:
   enable: true
   data:
-    mobai_hexoBlog:
-      icon: fab fa-themeisle
-      iconBackground: 'linear-gradient(to bottom right, #CED8F6 0%, #CED8F6 100%)'
+    Hexo_Matery:
+      icon: fa fa-coffee
+      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
       url: https://gitee.com/wang_lianjie/mobai_hexoBlog
-      desc: 一个基于Matery主题改造的响应式设计的 Hexo 博客主题。
+      desc: 一个基于matery主题改造的hexo博客(维护中/公共库)
+    Manageprojects:
+      icon: fas fa-user-cog
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+      url: https://github.com/mobaijun/saas-export
+      desc: ERP货运管理项目(开发中/私有库)
+    Advertising machine:
+      icon: fa fa-tv
+      iconBackground: 'linear-gradient(to bottom right, #594c6d 0%, #594c6d 100%)'
+      url: https://github.com/mobaijun/xcc-InformationAtv
+      desc: 目前公司开发中的一个基于广告机的信息发布系统(开发中/私有库)
+    Super Marie:
+      icon: fab fa-mailchimp
+      iconBackground: 'linear-gradient(to bottom right, #b2d235 0%, #b2d235 100%)'
+      url: https://github.com/mobaijun/MaliGame
+      desc: 基于Java代码开发的超级玛丽小游戏(已完成/公共库)
 
-# config my skills informations in about page.
-# If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
-# 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+#  config my skills informations in about page.
+#  If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
+#  在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 mySkills:
   enable: true
   data:
     Java:
-      background: 'linear-gradient(to right, #2EFE64 0%, #2EFE64 100%)'
-      percent: 59%
+      background: 'linear-gradient(to right, #7fb80e 0%, #7fb80e 100%)'
+      percent: 60%
+    MySQL:
+      background: 'linear-gradient(to right, #00ae9d 0%, #00ae9d 100%)'
+      percent: 60%
+    Linux:
+      background: 'linear-gradient(to right, #585eaa 0%, #585eaa 100%)'
+      percent: 60%
+    写作:
+      background: 'linear-gradient(to right, #8e7437 0%, #8e7437 100%)'
+      percent: 60%
+    程序设计:
+      background: 'linear-gradient(to right, #63434f 0%, #63434f 100%)'
+      percent: 50%
     JavaScript:
-      background: 'linear-gradient(to right, #58FAF4 0%, #58FAF4 100%)'
-      percent: 39%
-    HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 29%
+      background: 'linear-gradient(to right, #293047 0%, #293047 100%)'
+      percent: 40%
     CSS:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 36%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 58%
-    程序设计:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 25%
-    Linux:
-      background: 'linear-gradient(to right, #0000FF 0%, #0000FF 100%)'
-      percent: 60%
-    运营:
-      background: 'linear-gradient(to right, #5F4C0B 0%, #5F4C0B 100%)'
-      percent: 80%
-    写作:
-      background: 'linear-gradient(to right, #610B4B 0%, #610B4B 100%)'
-      percent: 60%
-    Python:
-      background: 'linear-gradient(to right, #0B3B17 0%, #0B3B17 100%)'
+      percent: 40%
+    HTML:
+      background: 'linear-gradient(to right, #375830 0%, #375830 100%)'
       percent: 30%
 
 # config gallery of my photos in about page.
@@ -284,13 +268,13 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: true
-  owner: mobaijun8
-  repo: mobai-blog.github.io
+  owner: mobaijun
+  repo: # 仓库地址
   oauth:
-    clientId: # 30d9***********
-    clientSecret: # f020*********************
+    clientId: 
+    clientSecret: 
   admin:
-    - mobaijun8
+    - mobaijun
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -318,12 +302,12 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
-  notify:
-  verify:
-  visitor:
+  enable: true
+  appId: 
+  appKey: 
+  notify: false
+  verify: false
+  visitor: true
   avatar: monsterid # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
   placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # Comment Box placeholder
@@ -332,15 +316,26 @@ valine:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
-  url: https://github.com/mobaijun8
+  enable: false
+  url: https://github.com/mobaijun
   title: Fork Me
+
+# The password verification feature of read post. To use this feature,
+# activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
+# Note: In order to ensure that the original password will not be leaked to the web page,
+# the password of the article must be encrypted by 'SHA256' so that it will not be cracked.
+# 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
+# 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
+verifyPassword:
+  enable: true
+  promptMessage: 请输入访问本文章的密码
+  errorMessage: 密码错误，将返回主页！
 
 # Add google analytics configuration
 # 添加 Google Analytics 配置
 googleAnalytics:
   enable: false
-  id:
+  id: 
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
@@ -353,7 +348,7 @@ busuanziStatistics:
 # 添加 baidu Analytics 配置
 baiduAnalytics:
   enable: false
-  id:
+  id: 
 
 # 百度搜索资源平台提交链接
 baiduPush: true
@@ -400,7 +395,6 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-  - /medias/featureimages/0.jpg
   - /medias/featureimages/1.jpg
   - /medias/featureimages/2.jpg
   - /medias/featureimages/3.jpg
@@ -411,12 +405,6 @@ featureImages:
   - /medias/featureimages/8.jpg
   - /medias/featureimages/9.jpg
   - /medias/featureimages/10.jpg
-  - /medias/featureimages/11.jpg
-  - /medias/featureimages/12.jpg
-  - /medias/featureimages/13.jpg
-  - /medias/featureimages/14.jpg
-  - /medias/featureimages/15.jpg
-
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
 
@@ -437,22 +425,22 @@ featureImages:
 # noreprint（不允许转载 not allowed to reprint）
 # pay（付费转载 pay for reprinting）
 reprint:
-  enable: true # whether enable reprint section 是否启用“转载规则限定模块”
+  enable: true  #whether enable reprint section 是否启用“转载规则限定模块”
   default: cc_by
 
 # DaoVoice online contact
 daovoice:
   enable: false
-  app_id:
+  app_id: 
 
 # Tidio online contact
 tidio:
   enable: false
-  public_key:
+  public_key: 
 
 #背景canvas-nest
 canvas_nest:
-  enable: true
+  enable: false
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,0 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -461,7 +449,7 @@ canvas_nest:
 
 # 背景静止彩带.
 ribbon:
-  enable: true
+  enable: false
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
@@ -469,7 +457,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: true
+  enable: false
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
@@ -503,10 +491,6 @@ navMenu:
 instantpage:
   enable: true
 
-# Whether to activate the 'love' effect of clicking on the page.
-# 是否激活点击页面的'爱心'效果，默认激活.
-clicklove:
-  enable: true
 
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
@@ -516,13 +500,17 @@ banner:
 #ICP备案信息尾部显示
 icp:
   enable: true
-  url:    # 备案链接
+  url: https://beian.miit.gov.cn   # 备案链接
   text:  # 备案信息
 
 # 鼠标点击烟花爆炸动效
 fireworks:
   enable: true
 
-# 在线登录聊天[闲聊]
-xianliao:
+# 背景樱花飘落特效
+sakura:
+  enable: true
+
+# 背景雪花飘落特效
+xuehuapiaoluo:
   enable: true

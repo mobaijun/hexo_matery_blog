@@ -1,5 +1,5 @@
 var gulp = require("gulp");
-var debug = require("gulp-debug"); // 修改Error in plugin "gulp-htmlmin"异常
+var debug = require("gulp-debug");
 var cleancss = require("gulp-clean-css"); //css压缩组件
 var uglify = require("gulp-uglify"); //js压缩组件
 var htmlmin = require("gulp-htmlmin"); //html压缩组件
@@ -165,4 +165,3 @@ gulp.task(
     gulp.parallel("compressHtml", "compressCss", "compressImage", "compressJs")
   )
 );
-//Gulp4最大的一个改变就是gulp.task函数现在只支持两个参数，分别是任务名和运行任务的函数
