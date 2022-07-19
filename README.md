@@ -1,34 +1,6 @@
 <p align="center"><img width="15%" src="https://www.mobaijun.com/medias/avatar.jpg"/></p>
 <h4 align="center">框架师</h4>
-<table align="center">
-    <tr>
-        <td align="center"><img width="78px" height="78px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/7.jpg"/>
-        </td>
-        <td align="center"><img width="78px" height="78px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/4.jpg"/>
-        </td>
-        <td align="center"><img width="78px" height="78px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/1.jpg"/>
-        </td>
-        <td align="center"><img width="78px" height="78px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/2.jpg"/>
-        </td>
-        <td align="center"><img width="78px" height="78px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/3.jpg"/>
-        </td>
-        <td align="center"><img width="78px" height="78px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/2020-4-28/6.jpg"/>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">Hexo</td>
-        <td align="center">Coding</td>
-        <td align="center">闪烁之狐</td>
-        <td align="center">洪卫的博客</td>
-        <td align="center">码云</td>
-        <td align="center">框架师</td>
-    </tr>
+
 </table>
 
 
@@ -99,23 +71,3 @@
 >**更多详情教程，强烈推荐看我写的：[ windows环境下搭建一个Hexo博客 ]( https://mobaijun.com/posts/259861027.html )**
 >
 >**最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我`star`，谢谢您！**
-
-有什么问题可以在文章最后评论区**留言和讨论**，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～
-<table align="center">
-    <tr>
-        <td align="center"><img width="200px" height="200px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/alipay.jpg"/>
-        </td>
-        <td align="center"><img width="200px" height="200px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/wechat.jpg"/>
-        </td>
-        <td align="center"><img width="200px" height="200px"
-                                src="https://wang_lianjie.gitee.io/mobai_images.gitee.io/img/zf/zan.jpg"/>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">支付宝</td>
-        <td align="center">微信支付</td>
-        <td align="center">赞赏</td>
-    </tr>
-</table>
