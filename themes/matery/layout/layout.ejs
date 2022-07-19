@@ -65,11 +65,6 @@
 <%- partial('_partial/baidu-analytics') %>
 <%- partial('_partial/baidu-push') %>
 
-<!--页面的'爱心'效果-->
-<% if (theme.clicklove.enable) { %>
-    <script src="<%- theme.libs.js.clicklove %>" async="async"></script>
-<% } %>
-
 <!--不蒜子-->
 <% if (theme.busuanziStatistics && theme.busuanziStatistics.enable) { %>
     <script async src="<%- theme.libs.js.busuanzi %>"></script>

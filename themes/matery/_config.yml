@@ -376,7 +376,6 @@ libs:
     aos: /libs/aos/aos.js
     scrollProgress: /libs/scrollprogress/scrollProgress.min.js
     lightgallery: /libs/lightGallery/js/lightgallery-all.min.js # V1.6.11
-    clicklove: /libs/others/clicklove.js
     busuanzi: /libs/others/busuanzi.pure.mini.js
     # 解决HTTPS://显示不安全(更新css/js版本,或者直接使用链接即可)
     aplayer: https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js

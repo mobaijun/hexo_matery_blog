@@ -9,7 +9,7 @@
     "deploy": "hexo deploy"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -18,7 +18,7 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^7.0.1",
-    "gulp-changed": "^4.0.2",
+    "gulp-changed": "^4.0.3",
     "gulp-clean-css": "^4.3.0",
     "gulp-debug": "^4.0.0",
     "gulp-htmlclean": "^2.7.22",
@@ -27,21 +27,21 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-plumber": "^1.2.1",
     "gulp-uglify": "^3.0.2",
-    "hexo": "^4.0.0",
-    "hexo-abbrlink": "^2.0.5",
+    "hexo": "^4.2.1",
+    "hexo-abbrlink": "^2.2.1",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-github-emojis": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-baidu-sitemap": "^0.1.6",
+    "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-index": "^1.0.0",
-    "hexo-generator-search": "^2.4.0",
-    "hexo-generator-sitemap": "^2.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-sitemap": "^2.2.0",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-lazyload-image": "^1.0.4",
-    "hexo-neat": "^1.0.4",
+    "hexo-lazyload-image": "^1.0.10",
+    "hexo-neat": "^1.0.9",
     "hexo-permalink-pinyin": "^1.1.0",
     "hexo-prism-plugin": "^2.3.0",
     "hexo-renderer-ejs": "^1.0.0",
@@ -49,8 +49,8 @@
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
-    "leancloud-storage": "^4.1.0",
-    "valine": "^1.4.15"
+    "leancloud-storage": "^4.13.1",
+    "valine": "^1.5.0"
   },
   "devDependencies": {
     "gulp-imagemin": "^7.1.0"
