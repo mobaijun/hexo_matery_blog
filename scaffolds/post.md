@@ -12,12 +12,8 @@ mathjax: false
 password: 
 summary: 
 tags: 
-	- 
-	- 
-	- 
-	- 
-	- 
+ - 
 categories: 
-	- 
+ - 
 ---
 
